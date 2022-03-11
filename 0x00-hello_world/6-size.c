@@ -1,14 +1,11 @@
+#include <stdio.h>
+
 /**
  * main - program startup
  (*
  * Description: prints the size of various types)    
  * Return: return (0) is the required function signature
- */
-
-
-
-#include <stdio.h>
-int main(void)
+ */int main(void)
 {
 	        printf("Size of a char: %d byte(s)\n", sizeof(char));
 		printf("Size of an int: %d byte(s)\n", sizeof(int));
