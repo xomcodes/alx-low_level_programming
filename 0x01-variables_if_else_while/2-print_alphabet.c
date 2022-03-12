@@ -6,6 +6,7 @@
  */
 int main(void)
 {
+
 	char a = 'a';
 	int n = 0
 
