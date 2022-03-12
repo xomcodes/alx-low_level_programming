@@ -1,29 +1,31 @@
 #include <stdio.h>
+
 /**
- * main - Program entry point
- *
- * Return: 0 on success. Error code otherwise
- */
+* main - print the letters of the alphabet
+*
+* Description: print the letters of the alphabet in lower then in uppercase
+*
+* Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-	char a = 'a';
-	char A = 'A';
-	int n = 0;
+	int i, j;
 
-	while (n < 52)
+	i = 97;
+	j = 65;
+
+	while (i < 123)
 	{
-		if (n < 26)
-		{
-			putchar(a);
-			a++
-		} else
-		{
-			putchar(A);
-			A++
-		}
-		n++;
+		putchar(i);
+		i++;
 	}
-	putchar('\n');
+	while (j < 91)
+	{
+		putchar(j);
+		j++;
+	}
+	putchar(10);
+
 	return (0);
 }
-	
