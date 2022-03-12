@@ -1,24 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - Program entry point
- *
- * Return: 0 on success. Error code otherwise
- */
+* main - print the letters of the alphabet
+*
+* Description: print the letters of the alphabet
+*
+* Return: Always 0 (Success)
+*/
+
 int main(void)
 {
+	int i = 97;
 
-		char a = 'a';
-		int n = 0;
+	while (i < 123)
+	{
+		putchar(i);
+		i++;
+	}
+	putchar(10);
 
-
-	        while (n < 26)
-		{
-
-		         putchar(a);
-			 a++;  
-			 n++;
-		}
-
-		putchar('\n');
-		return (0);
+	return (0);
 }
