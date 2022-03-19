@@ -1,31 +1,21 @@
-#inlude "main.h"
-/**
- *print_triangle - prints a triangle of size size.
- *@size: size of triangle.
- *
- *Return: void.
- */
-void print_triangle(int size)
-{
-	int i, j, space;
+#include "main.h"
 
-	if (size <= 0)
+/**
+* print_number - Prints an integer.
+* @n: The integer to be printed.
+*/
+void print_number(int n)
+{
+	unsigned int num = n;
+
+	if (n < 0)
 	{
-		_putchar('\n');
+		_putchar('-');
+		num = -num;
 	}
-	else
-	{
-		for (i = 1; i <= size; i++)
-		{
-			for (space = 1; space <= (size - i); space++)
-			{
-				_putchar(' ');
-			}
-			for (j = 1; j <= i; j++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-		}
-	}
+
+	if ((num / 10) > 0)
+		print_number(num / 10);
+
+	_putchar((num % 10) + '0');
 }
